@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Intelligence Medical Bureau - Strategic Research Swarm AI system">
+    <title>Intelligence Medical Bureau Swarm</title>
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="background-anim"></div>
+    <div class="glass-container">
+        <header>
+            <div class="logo-container">
+                <div class="pulse-ring"></div>
+                <div class="logo-icon">🛰️</div>
+            </div>
+            <h1>Intelligence Medical Bureau</h1>
+            <p>Strategic Research Swarm</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <textarea id="queryInput"
+                    placeholder="Enter Rare Disease Research Objective... E.g., 'Analyze solid state battery efficacy'"></textarea>
+                <button id="dispatchBtn">
+                    <span class="btn-text">Dispatch Swarm</span>
+                    <div class="loader-ring hidden"></div>
+                </button>
+            </div>
+
+            <div id="statusArea" class="status-area hidden">
+                <div class="status-step active" id="step1">🛰️ Scout-01 Accessing Data...</div>
+                <div class="status-step" id="step2">🔬 Analyst-01 Synthesizing Metrics...</div>
+                <div class="status-step" id="step3">♟️ Strategist-01 Compiling Report...</div>
+            </div>
+
+            <div id="reportContainer" class="report-container hidden">
+                <h2>Strategic Report</h2>
+                <div id="reportContent" class="markdown-body"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
